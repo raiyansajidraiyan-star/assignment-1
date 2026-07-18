@@ -125,7 +125,7 @@
     cursor: pointer;
     align-content: center;
     position: relative;
-    top: -310px;
+    top: -450px;
 }
 
 .hero{
@@ -279,6 +279,185 @@
 
 
 /* placeholder section start */
+
+/* VENUES SECTION — Colorful & Organized Styles */
+
+/* Variables */
+:root{
+  --max-width:1200px;
+  --radius:16px;
+  --gap:20px;
+  --muted:#7b8a93;
+  --bg1: #0f1724;
+  --accent1: #7c5cff;
+  --accent2: #6ee7b7;
+  --accent3: #ffb86b;
+  --card-grad: linear-gradient(135deg, rgba(124,92,255,0.12), rgba(110,231,183,0.06));
+  --glass: rgba(255,255,255,0.03);
+  --text:#eaf2f8;
+  --danger:#ff6b6b;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Section wrapper */
+.venues-section{
+  background: radial-gradient(1200px 400px at 10% 10%, rgba(124,92,255,0.06), transparent 10%),
+              radial-gradient(1000px 300px at 90% 90%, rgba(110,231,183,0.04), transparent 12%),
+              #12244e;
+  padding:64px 20px;
+  color:var(--text);
+}
+
+/* Center container */
+.wrap{
+  max-width:var(--max-width);
+  margin:0 auto;
+  display:flex;
+  flex-direction:column;
+  gap:28px;
+  align-items:center;
+}
+
+/* Header */
+.venues-header{ text-align:center; margin-bottom:6px; }
+.section-title{
+  font-size:32px;
+  margin:0;
+  font-weight:900;
+  line-height:1.02;
+  letter-spacing:0.2px;
+  background: linear-gradient(90deg,var(--accent1),var(--accent2),var(--accent3));
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  padding:8px 14px;
+  border-radius:12px;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.18);
+}
+.section-subtitle{
+  margin:8px 0 0 0;
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* Day cards grid */
+.day-cards{
+  width:100%;
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:var(--gap);
+  align-items:start;
+}
+
+/* Card base */
+.day-card{
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius:var(--radius);
+  padding:18px;
+  box-shadow: 0 12px 40px rgba(2,6,23,0.45);
+  border:1px solid rgba(255,255,255,0.03);
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  transition: transform .18s ease, box-shadow .18s ease;
+  overflow:hidden;
+}
+.day-card:hover{ transform: translateY(-8px); box-shadow: 0 22px 60px rgba(2,6,23,0.5); }
+
+/* Top strip color per day */
+.day-1{ border-top:6px solid #7c5cff; }
+.day-2{ border-top:6px solid #6ee7b7; }
+.day-3{ border-top:6px solid #ffb86b; }
+
+/* Card top */
+.card-top{ display:flex; align-items:center; gap:12px; }
+.day-badge{
+  background: linear-gradient(90deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+  color:var(--text);
+  padding:6px 10px;
+  border-radius:10px;
+  font-weight:800;
+  font-size:13px;
+  box-shadow: inset 0 -6px 18px rgba(0,0,0,0.25);
+}
+.day-title{ margin:0; font-size:20px; font-weight:900; color:#fff; letter-spacing:0.4px; }
+
+/* Venue info */
+.venue-info{ display:flex; flex-direction:column; gap:6px; }
+.venue-name{ margin:0; color:var(--muted); font-weight:800; }
+.venue-address{ margin:0; color:#b9c6cf; font-size:13px; }
+
+/* Map button */
+.map-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  margin-top:6px;
+  text-decoration:none;
+  background: linear-gradient(90deg,var(--accent1),var(--accent2));
+  color:#06121a;
+  padding:10px 14px;
+  border-radius:12px;
+  font-weight:800;
+  font-size:13px;
+  box-shadow: 0 10px 28px rgba(124,92,255,0.12);
+  transition: transform .14s ease, box-shadow .14s ease, opacity .14s ease;
+}
+.map-btn .icon{ fill: #06121a; opacity:0.95; }
+.map-btn:hover{ transform: translateY(-4px); box-shadow: 0 18px 44px rgba(124,92,255,0.18); opacity:0.98; }
+
+/* Gallery: 2x2 with 16:9 enforced */
+.gallery{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:10px;
+  margin-top:8px;
+}
+.gallery img{
+  width:100%;
+  aspect-ratio: 16 / 9;
+  object-fit:cover;
+  display:block;
+  border-radius:10px;
+  border:1px solid rgba(255,255,255,0.03);
+  transition: transform .18s ease, filter .18s ease;
+  height:auto;
+}
+.gallery img:hover{ transform: scale(1.04); filter:brightness(1.03); }
+
+/* Sponsors */
+.sponsors{ width:100%; padding:18px; border-radius:12px; background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02)); border:1px solid rgba(255,255,255,0.02); }
+.sponsors-title{ margin:0 0 12px 0; font-size:16px; color:var(--muted); text-align:center; font-weight:800; }
+.sponsor-grid{ display:grid; grid-template-columns: repeat(8,1fr); gap:12px; align-items:center; }
+.sponsor{ display:flex; align-items:center; justify-content:center; padding:8px; border-radius:10px; background: linear-gradient(90deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02)); }
+.sponsor img{ max-width:100%; max-height:56px; object-fit:contain; filter:grayscale(30%) contrast(0.95); transition: filter .18s ease, transform .18s ease; }
+.sponsor:hover img{ filter:none; transform: translateY(-6px) scale(1.02); }
+
+/* Emergency */
+.emergency{ width:100%; margin-top:12px; padding:18px; border-radius:12px; background: linear-gradient(90deg, rgba(255,107,107,0.06), rgba(124,92,255,0.03)); border-left:4px solid var(--danger); }
+.emergency-title{ margin:0 0 12px 0; color:#fff; text-align:center; font-weight:900; }
+.emergency-grid{ display:grid; grid-template-columns: repeat(3,1fr); gap:12px; }
+.emergency-item{ background: rgba(255,255,255,0.02); padding:12px; border-radius:10px; display:flex; flex-direction:column; gap:6px; align-items:center; justify-content:center; }
+.emergency-item strong{ color:#fff; font-size:14px; }
+.emergency-item span{ color:#f3f7fb; font-weight:800; }
+
+/* Responsive */
+@media (max-width:1100px){
+  .day-cards{ grid-template-columns: repeat(2,1fr); }
+  .sponsor-grid{ grid-template-columns: repeat(4,1fr); }
+  .emergency-grid{ grid-template-columns: repeat(2,1fr); }
+}
+@media (max-width:700px){
+  .wrap{ padding:0 12px; }
+  .day-cards{ grid-template-columns: 1fr; }
+  .gallery{ grid-template-columns: repeat(2,1fr); gap:8px; }
+  .sponsor-grid{ grid-template-columns: repeat(2,1fr); gap:10px; }
+  .gallery img{ border-radius:8px; }
+  .section-title{ font-size:22px; }
+  .section-subtitle{ font-size:13px; }
+  .emergency-grid{ grid-template-columns: 1fr; }
+}
+
 
 /* placeholder section end */
 
