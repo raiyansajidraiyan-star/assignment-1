@@ -275,3 +275,43 @@
 
 }
  
+/* payment section done */
+
+
+/* placeholder section start */
+
+/* placeholder section end */
+
+
+
+
+
+/* /* footer section start * */
+
+.footer{
+    background-color: #0D1B2A;
+
+}
+
+.footer-2-side {
+    display: flex;
+    justify-content: space-between;
+    gap: 90px;
+    padding: 100px;
+}
+
+.privacy-terms{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-logo-media{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+    top: 47px;
+}
+
+/* footer section end */
