@@ -76,6 +76,59 @@
     padding: 10px 24px;
     size: 23px;
     color: white;
+    cursor: pointer;
 
 }
 
+
+/* Nav bar done */
+
+.heroh2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 4rem;
+    color: white;
+    padding-top: 100px;
+
+
+}
+
+.herop{
+    text-align: center;
+    color: white;
+    font-size: large;
+
+}
+ 
+.mid-reg{
+    text-align: center;
+    margin-bottom:30px;
+    
+}
+
+.reg-button2{
+    background-color: #2563EB ;
+    border: 0;
+    outline: 0;
+    font-size: 25px;
+    border-radius:12px;
+    padding: 18px 33px;
+    size: 27px;
+    color: white;
+    cursor: pointer;
+    align-content: center;
+    position: relative;
+    top: -145px;
+
+
+}
+
+.hero{
+    background:url(assets/banner.jpg) no-repeat center center/cover ;
+    text-align: center;
+    height: 786px;
+    width: 1551px;
+    
+}
+
+/* hero section end */
