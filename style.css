@@ -84,12 +84,15 @@
 
 /* Nav bar done */
 
+/* hero section start */
+
 .heroh2{
     text-align: center;
     font-weight: bold;
-    font-size: 4rem;
     color: white;
-    padding-top: 100px;
+    padding-top: 150px;
+    font-size: 78px !important; 
+
 
 
 }
@@ -98,6 +101,9 @@
     text-align: center;
     color: white;
     font-size: large;
+    position: relative;
+    top: -20px;
+    font-size: x-large !important;
 
 }
  
@@ -109,7 +115,6 @@
 
 .reg-button2{
     background-color: #2563EB ;
-    background: rgba(0,0,0,0.6);
     border: 0;
     outline: 0;
     font-size: 25px;
@@ -120,7 +125,7 @@
     cursor: pointer;
     align-content: center;
     position: relative;
-    top: -145px;
+    top: -310px;
 }
 
 .hero{
@@ -135,7 +140,12 @@
 
 /* speaker section start */
 
-
+ #speaker-heading{
+    margin: 95px 0px 60px 0px;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
 
 .speaker{
     display: grid;
@@ -171,8 +181,97 @@
 
 /* payment starat*/
 
-.insidepayment{
-    
-    width: 600px;
-    border: #E5E7EB 3px solid;
+.cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
 }
+
+.card-1{
+    border: #888888 1px solid;
+    border-radius: 12px;
+}
+
+.card-1 ul ::marker{
+    color: #2563EB;
+}
+
+.card-1 ul li {
+    margin-bottom: 17px;
+}
+
+.get-started-btn{
+    background-color: white ;
+    border: 1px solid blue;
+    font-size: 15px;
+    border-radius:10px;
+    padding: 12px 63px;
+    position: relative;
+    left: 75px;
+    bottom: 27px;
+    size: 23px;
+    color: blue;
+    cursor: pointer;
+
+}
+
+
+
+
+.card-2{
+    border: #888888 1px solid;
+    border-radius: 12px;
+    background-color: #021134;
+}
+
+.card-2 ul ::marker{
+    color: #30c2f37f;
+}
+
+.card-2 ul li {
+    margin-bottom: 17px;
+}
+
+.get-started-btn2{
+    background-color:blue ;
+    border: none;
+    font-size: 15px;
+    border-radius:10px;
+    padding: 12px 63px;
+    position: relative;
+    left: 89px;
+    bottom: 27px;
+    size: 23px;
+    color: white;
+    cursor: pointer;
+
+}
+
+.card-3{
+    border: #888888 1px solid;
+    border-radius: 12px;
+}
+
+.card-3 ul ::marker{
+    color: #2563EB;
+}
+
+.card-3 ul li {
+    margin-bottom: 17px;
+}
+
+.get-started-btn3{
+    background-color: white ;
+    border: 1px solid blue;
+    font-size: 15px;
+    border-radius:10px;
+    padding: 12px 63px;
+    position: relative;
+    left: 89px;
+    bottom: 27px;
+    size: 23px;
+    color: blue;
+    cursor: pointer;
+
+}
+ 
